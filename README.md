@@ -3,4 +3,5 @@
 Uts Store Pemrograman Web
 
 SS:
-![image](https://github.com/Ceek350/web/assets/52951252/97b479aa-fdd4-4566-ab36-5ba74e96f820)
+![image](https://github.com/Ceek350/web/assets/52951252/d410b74c-b9d3-4008-a205-1b47c5f305bc)
+

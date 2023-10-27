@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Project</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style>
 body {
   background-color:black;
@@ -10,7 +11,7 @@ body {
 }
 
 .light-mode{
-background-color:white;
+background-color:rgba(255, 255, 255, 0.658);
 color:black;
 }
 
@@ -150,10 +151,10 @@ border-radius:5px;
 .game-container {
   width: 100%;
   max-width: 1500px;
-  display: flex;
+  display: grid;
   border-radius: 30px;
   padding: 10px 20px;
-  background-color: #38444d;
+  background-color:transparent;
   margin-top: 10px;
   margin-left: 150px;
 }
@@ -161,9 +162,12 @@ border-radius:5px;
 .game-card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: #38444d;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
   margin: 10px;
   margin-right: 10px;
   padding: 10px;
@@ -180,6 +184,13 @@ scale:1.1;
 
 .w3-card-4 {
   display: relative;
+  width:17%; 
+  padding-right: 20px;
+  padding-left: 22px;
+}
+
+.w3-card-4 img {
+  border-radius: 22px;
 }
 
 
@@ -198,7 +209,7 @@ scale:1.1;
     </div>
   	<li><a href="#home">About</a></li>
   	<li><a href="#news">Home</a></li>
-    <li><h1 class="toogle" onclick="myFunction()">⛅</h1></li>
+    <li><i onclick="myFunction(this)" class="fa-solid fa-sun" style="font-size:22px; margin-top:14px;"></i></li>
   	</li>
   	<h1 class="logo"><a class="a" href="#"></a>UTS Store</h1>
 	</ul>
@@ -214,79 +225,92 @@ scale:1.1;
 <!--baris 1-->
 <div class="game-container">
   <div class="game-card">
-    <div class="w3-card-4" style="width:20%; padding-right: 20px;">
+    <div class="w3-card-4">
       <img src="img/Moba.jpg" alt="Mobile Legends" style="width:100%">
       <div class="w3-container w3-center">
         <p style="text-align: center; color: aqua;">Mobile Legends</p>
       </div>
     </div>
     <br>
-    <div class="w3-card-4" style="width:20%; padding-right: 20px;">
+    <div class="w3-card-4">
       <img src="img/Moba.jpg" alt="Mobile Legends" style="width:100%">
       <div class="w3-container w3-center">
         <p style="text-align: center; color: aqua;">Mobile Legends 2</p>
       </div>
     </div>
-    <div class="w3-card-4" style="width:20%; padding-right: 20px;">
+    <div class="w3-card-4">
       <img src="img/Moba.jpg" alt="Mobile Legends" style="width:100%">
       <div class="w3-container w3-center">
         <p style="text-align: center; color: aqua;">Mobile Legends 3</p>
       </div>
     </div>
-    <div class="w3-card-4" style="width:20%; padding-right: 20px;">
+    <div class="w3-card-4">
       <img src="img/Moba.jpg" alt="Mobile Legends" style="width:100%">
       <div class="w3-container w3-center">
         <p style="text-align: center; color: aqua;">Mobile Legends 4</p>
       </div>
     </div>
-    <div class="w3-card-4" style="width:20%; padding-right: 20px;">
+    <div class="w3-card-4">
       <img src="img/Moba.jpg" alt="Mobile Legends" style="width:100%">
       <div class="w3-container w3-center">
         <p style="text-align: center; color: aqua;">Mobile Legends 4</p>
       </div>
     </div>
-    <div class="w3-card-4" style="width:20%; padding-right: 20px;">
+    <div class="w3-card-4">
       <img src="img/Moba.jpg" alt="Mobile Legends" style="width:100%">
       <div class="w3-container w3-center">
         <p style="text-align: center; color: aqua;">Mobile Legends 4</p>
       </div>
     </div>
-  </div>
-</div>
-<!--baris 2-->
-<div class="game-container">
-  <div class="game-card">
-    <div class="w3-card-4" style="width:20%; padding-right: 20px;">
-      <img src="img/Moba.jpg" alt="Mobile Legends" style="width:100%">
-      <div class="w3-container w3-center">
-        <p style="text-align: center; color: aqua;">Mobile Legends</p>
-      </div>
-    </div>
-    <div class="w3-card-4" style="width:20%; padding-right: 20px;">
-      <img src="img/Moba.jpg" alt="Mobile Legends" style="width:100%">
-      <div class="w3-container w3-center">
-        <p style="text-align: center; color: aqua;">Mobile Legends 2</p>
-      </div>
-    </div>
-    <div class="w3-card-4" style="width:20%; padding-right: 20px;">
-      <img src="img/Moba.jpg" alt="Mobile Legends" style="width:100%">
-      <div class="w3-container w3-center">
-        <p style="text-align: center; color: aqua;">Mobile Legends 3</p>
-      </div>
-    </div>
-    <div class="w3-card-4" style="width:20%; padding-right: 20px;">
+    <div class="w3-card-4">
       <img src="img/Moba.jpg" alt="Mobile Legends" style="width:100%">
       <div class="w3-container w3-center">
         <p style="text-align: center; color: aqua;">Mobile Legends 4</p>
       </div>
     </div>
-    <div class="w3-card-4" style="width:20%; padding-right: 20px;">
+    <div class="w3-card-4">
       <img src="img/Moba.jpg" alt="Mobile Legends" style="width:100%">
       <div class="w3-container w3-center">
         <p style="text-align: center; color: aqua;">Mobile Legends 4</p>
       </div>
     </div>
-    <div class="w3-card-4" style="width:20%; padding-right: 20px;">
+    <div class="w3-card-4">
+      <img src="img/Moba.jpg" alt="Mobile Legends" style="width:100%">
+      <div class="w3-container w3-center">
+        <p style="text-align: center; color: aqua;">Mobile Legends 4</p>
+      </div>
+    </div>
+    <div class="w3-card-4">
+      <img src="img/Moba.jpg" alt="Mobile Legends" style="width:100%">
+      <div class="w3-container w3-center">
+        <p style="text-align: center; color: aqua;">Mobile Legends 4</p>
+      </div>
+    </div>
+    <div class="w3-card-4">
+      <img src="img/Moba.jpg" alt="Mobile Legends" style="width:100%">
+      <div class="w3-container w3-center">
+        <p style="text-align: center; color: aqua;">Mobile Legends 4</p>
+      </div>
+    </div>
+    <div class="w3-card-4">
+      <img src="img/Moba.jpg" alt="Mobile Legends" style="width:100%">
+      <div class="w3-container w3-center">
+        <p style="text-align: center; color: aqua;">Mobile Legends 4</p>
+      </div>
+    </div>
+    <div class="w3-card-4">
+      <img src="img/Moba.jpg" alt="Mobile Legends" style="width:100%">
+      <div class="w3-container w3-center">
+        <p style="text-align: center; color: aqua;">Mobile Legends 4</p>
+      </div>
+    </div>
+    <div class="w3-card-4">
+      <img src="img/Moba.jpg" alt="Mobile Legends" style="width:100%">
+      <div class="w3-container w3-center">
+        <p style="text-align: center; color: aqua;">Mobile Legends 4</p>
+      </div>
+    </div>
+    <div class="w3-card-4">
       <img src="img/Moba.jpg" alt="Mobile Legends" style="width:100%">
       <div class="w3-container w3-center">
         <p style="text-align: center; color: aqua;">Mobile Legends 4</p>
@@ -297,15 +321,17 @@ scale:1.1;
 
 <div class="info">
 	<h3>footer nanti</h3>
-	<p>Hover over the <span>"Dropdown"</span> link to see the dropdown menu.</p>
+	<p>Hover over the <span>"Dropdown"</span> link to see below</p>
     <a href="#">Download App</a>
 </div>
 
 <script>
-function myFunction() {
+function myFunction(x) {
    var element = document.body;
    element.classList.toggle("light-mode");
+   x.classList.toggle("fa-moon");
 }
+
 </script>
 
 </body>
